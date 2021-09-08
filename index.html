@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .body {
+    background-color: #333;
+    font-family: "Calibri", "Arial", sans-serif;
+}
+
+.main {
+    padding: 50px 80px;
+}
+
+.h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 35px;
+    margin-top: 200px 30px;
+}
+
+.link {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    font-size: 20px;
+    position: relative;
+    align-items: center;
+    margin-bottom: 25px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+.link::before {
+    top: 0;
+    content: "";
+    width: 25px;
+    height: 25px;
+    left: -35px;
+    display: block;
+    z-index: 1000;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./../img/github.svg);
+}
+
+.link:hover {
+    color: rgb(255, 176, 6);
+}
+
+
+.links::before {
+    top: 0;
+    content: "";
+    width: 25px;
+    height: 25px;
+    left: -35px;
+    display: block;
+    z-index: 1000;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./../img/netlify.svg);
+}
+
+
+.link:hover, links:hover {
+    opacity: 0.6;
+}
+</style>
+
+<body class="body">
+    <div class="main">
+        <section>
+            <h1 class="h1">Uyga vazifa 7 - Musayev Alisher</h1>
+            <a class="link" href="#">Git hub</a>
+            <a class="link links" href="#">Netlify</a>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
